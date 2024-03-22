@@ -10,11 +10,7 @@ from FSub import ADMINS, CHANNEL_DB
 from FSub.helper.text import str_encoder
 
 
-@Client.on_message(
-    filters.private & 
-    filters.user(ADMINS) &
-    ~filters.command(
-        ["start", "batch", "broadcast", "restart"]))
+@Client.on_message(filters.private & filters.user(ADMINS) & ~filters.command(["start", "ping", "batch", "broadcast", "users", "restart"]))
 async def generate_command(client, message):
     generate = await message.reply("...", quote=True)
     copied   = await message.copy(chat_id=CHANNEL_DB, disable_notification=True)

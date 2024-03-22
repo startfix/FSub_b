@@ -58,9 +58,11 @@ class FSub(Client):
             self.bot_logger.info("Menyetel perintah bot...")
             await self.set_bot_commands([
                 BotCommand("start", "Mulai bot"),
-                BotCommand("batch", "[Admin bot] Pesan massal"),
-                BotCommand("broadcast", "[Admin bot] Kirim pesan siaran"),
-                BotCommand("restart", "[Admin bot] Mulai ulang bot")])
+                BotCommand("ping", "Periksa latensi bot"),
+                BotCommand("batch", "[Admin] Pesan massal"),
+                BotCommand("broadcast", "[Admin] Kirim pesan siaran"),
+                BotCommand("users", "[Admin] Periksa jumlah pengguna bot"),
+                BotCommand("restart", "[Admin] Mulai ulang bot")])
             self.bot_logger.info("Perintah bot berhasil disetel.")
         except Exception as e:
             self.bot_logger.error(e)
