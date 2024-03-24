@@ -29,8 +29,9 @@ PROTECT_CONTENT = eval(os.environ.get("PROTECT_CONTENT", "True"))
 
 # Database
 DATABASE_NAME = BOT_TOKEN.split(":", 1)[0]
-DATABASE_URL  = os.environ.get("DATABASE_URL")
+DATABASE_URL  = os.environ.get("DB_URI", "")
 
+FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", ""))
 FORCE_SUB_TOTAL = 1
 FORCE_SUB_      = {}
 while True:
