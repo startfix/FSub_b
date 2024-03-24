@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, MessageEmpty
 from pyrogram.types import Message, InlineKeyboardMarkup
 
-from FSub import ADMINS, CHANNEL_DB, PROTECT_CONTENT
+from config import ADMINS, CHANNEL_DB, PROTECT_CONTENT
 from FSub.helper.button import fsub_button
 from FSub.helper.filters import fsub_subscriber
 from FSub.helper.text import str_decoder
