@@ -3,7 +3,7 @@ from pyrogram.types import Message
 
 from pyromod.helpers import ikb
 
-from FSub import ADMINS, CHANNEL_DB
+from config import ADMINS, CHANNEL_DB
 from FSub.helper.text import str_encoder
 
 
