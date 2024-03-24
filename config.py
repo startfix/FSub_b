@@ -13,10 +13,10 @@ LOGGER = logging.getLogger("fsub")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 # API ID Anda dari my.telegram.org
-API_ID = int(os.environ.get("APP_ID", ""))
+API_ID = int(os.environ.get("APP_ID", "2040"))
 
 # API Hash Anda dari my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "b18441a1ff607e10a989891a5462e627")
 
 # ID Channel Database
 CHANNEL_DB = int(os.environ.get("CHANNEL_DB", ""))
