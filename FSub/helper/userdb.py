@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-from FSub import DATABASE_URL, DATABASE_NAME, LOGGER
+from config import DATABASE_URL, DATABASE_NAME, LOGGER
 
 dbclient  = MongoClient(DATABASE_URL)
 database  = dbclient[DATABASE_NAME]
