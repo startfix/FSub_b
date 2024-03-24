@@ -1,5 +1,5 @@
 from pyrogram.types import InlineKeyboardButton
-from FSub import FORCE_SUB_
+from config import FORCE_SUB_
 
 
 def fsub_button(client, message):
