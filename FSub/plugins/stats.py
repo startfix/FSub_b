@@ -3,7 +3,7 @@ import time
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from FSub import ADMINS
+from config import ADMINS
 from FSub.helper.userdb import full_user
 
 
