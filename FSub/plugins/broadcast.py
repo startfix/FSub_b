@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from FSub import ADMINS, PROTECT_CONTENT
+from config import ADMINS, PROTECT_CONTENT
 from FSub.helper.userdb import del_user, full_user
 
 
