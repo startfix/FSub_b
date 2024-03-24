@@ -5,7 +5,7 @@ from pyrogram.types import BotCommand
 
 from config import (
     API_HASH,
-    APP_ID,
+    API_ID,
     CHANNEL_DB,
     FORCE_SUB_,
     FORCE_SUB_TOTAL,
