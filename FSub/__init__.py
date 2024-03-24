@@ -1,36 +1,19 @@
 import os
-import logging
 
 from pyromod import Client
 from pyrogram.types import BotCommand
 
-
-logging.basicConfig(level=logging.INFO)
-logging.getLogger("pyrogram").setLevel(logging.ERROR)
-LOGGER = logging.getLogger("FSub")
-
-API_ID    = int(os.environ.get("API_ID", 2040))
-API_HASH  = os.environ.get("API_HASH", "b18441a1ff607e10a989891a5462e627")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-
-DATABASE_NAME = BOT_TOKEN.split(":", 1)[0]
-DATABASE_URL  = os.environ.get("DATABASE_URL")
-
-CHANNEL_DB = int(os.environ.get("CHANNEL_DB"))
-
-ADMINS = [int(i) for i in os.environ.get("ADMINS").split()]
-
-FORCE_SUB_TOTAL = 1
-FORCE_SUB_      = {}
-while True:
-    key   = f"FORCE_SUB_{FORCE_SUB_TOTAL}"
-    value = os.environ.get(key)
-    if value is None:
-        break
-    FORCE_SUB_[FORCE_SUB_TOTAL] = int(value)
-    FORCE_SUB_TOTAL += 1
-
-PROTECT_CONTENT = eval(os.environ.get("PROTECT_CONTENT", "True"))
+from config import (
+    API_HASH,
+    APP_ID,
+    CHANNEL_DB,
+    FORCE_SUB_,
+    FORCE_SUB_TOTAL,
+    LOGGER,
+    ADMINS,
+    BOT_TOKEN,
+    PROTECT_CONTENT,
+)
 
 
 class FSub(Client):
