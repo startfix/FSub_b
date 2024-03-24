@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 
 load_dotenv("config.env")
 
-
 logging.basicConfig(level=logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 LOGGER = logging.getLogger("fsub")
@@ -14,7 +13,7 @@ LOGGER = logging.getLogger("fsub")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 # API ID Anda dari my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
+API_ID = int(os.environ.get("APP_ID", ""))
 
 # API Hash Anda dari my.telegram.org
 API_HASH = os.environ.get("API_HASH", "")
