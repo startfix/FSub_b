@@ -1,5 +1,5 @@
 from pyrogram.errors import UserNotParticipant
-from FSub import ADMINS, FORCE_SUB_
+from config import ADMINS, FORCE_SUB_
 
 
 def fsub_subscriber(filter, client, update):
